@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilos/estilo.css" rel="stylesheet">
+    <title>Frames Segurança - Julia</title>
+</head>
+<body>
+    <div id="frame1">
+        <h1>Welcome to my website</h1>
+        <textarea id="text_area1"></textarea>
+        <input type="button" id="button1" onclick="hackerCopy1()" value="click">
+    </div>
+    <div id="frame2">
+        <h1>Welcome to my website hacker baby >:)</h1>
+        <textarea id="text_area2"></textarea>
+        <input type="button" id="button1" onclick="hackerCopy2()" value="click">
+    </div>
+</body>
+<script type="text/javascript">
+
+    function hackerCopy1() {
+        var text_copy = document.getElementById("text_area1").value;
+        var text_paste = document.getElementById("text_area2");
+        text_paste.value = text_copy;
+    }
+
+    function hackerCopy2() {
+        var text_copy = document.getElementById("text_area2").value;
+        var text_paste = document.getElementById("text_area1");
+        text_paste.value = text_copy;
+    }
+</script>
+</html>
